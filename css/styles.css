@@ -1,71 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  background-color: #010113;
+  font-family: "Montserrat", sans-serif;
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(38, 4, 35);
-  color:white;
-}
+/*NAVBAR*/
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 2em;
+  background-color: #01010E;
+  color: white;
 }
-.brand {
-  margin-top: -7px;
-}
-.brand span {
+
+.navbar-brand span {
   color: rgb(216, 39, 187);
 }
-.menu {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-}
-.menu  li {
-  list-style: none;
 
-}
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px; 
-}
+/*
+.menu{
+    display: flex;
+    justify-content: space-around;
+  } */
 
-.menu li:hover a{
-  background-color: rgb(216, 39, 187);
-  color: rgb(38, 4, 35);
-  transition: ease-in .4s;
-}
-
-.menu .active {
-  color: rgb(216, 39, 187);
- 
-}
-
-
-.menu li a:hover {
-  color: rgb(38, 4, 35);
-}
-
-
+/*MAIN*/
 .main {
-  margin: 0 auto;
+  margin: 45px auto;
   width: 80vw;
-  height: 80vh;
+  height: 90vh;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
- align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 2em;
+  color: white;
 }
 
 h1 {
@@ -76,42 +39,44 @@ h1 {
   color: rgb(216, 39, 187);
 }
 
-.download-cv {
+.buttoms {
   padding: 10px 20px;
   background-color: rgba(241, 64, 212, 0.774);
   border: none;
   border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(215, 41, 163, 0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(215, 41, 163, 0.69);
   box-shadow: 1px 3px 11px -5px rgba(215, 41, 163, 0.69);
 }
 
-.download-cv:hover {
+.buttoms:hover {
   background-color: white;
   box-shadow: none;
 }
 
 .main img {
- border:  7px solid rgb(216, 39, 187);
- border-radius: 150px 160px;
- width: 350px;
+  border: 7px solid rgb(216, 39, 187);
+  border-radius: 150px 160px;
+  width: 350px;
   height: 520px;
   z-index: 1;
 }
 
+/*ABOUT*/
 .about {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
+  height: 59v;
+  width: 100%;
   align-items: center;
-  background-color:rgb(238, 226, 204);
+  background-color: #020120;
+  color: white;
 }
 
 .about img {
   width: 40%;
   grid-column: 1/5;
+
 }
 
 .about-info {
@@ -121,7 +86,7 @@ h1 {
 
 .about-info h2 {
   font-size: 2em;
-  color: rgb(38, 4, 35);
+  color: #fff;
 }
 
 .divider {
@@ -136,124 +101,16 @@ h1 {
   margin-bottom: 1em;
 }
 
-.portfolio,
-.contact-section {
-  width: 100vw;
-  background-color: rgb(38, 4, 35);
-  color: #fff;
-}
+/*PORTFOLIO*/
 
-.portfolio-heading {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-.portfolio-heading h2,
-.contact-heading h2 {
-  font-size: 2.5em;
-  color: rgb(38, 4, 35);
-}
-
-.portfolio .container {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contenedor {
+  padding-bottom: 120px;
 }
 
 .card {
-  width: 300px;
-  background-color: rgb(84, 3, 76);
-  margin: 1em;
-}
-
-.card__img {
-  width: 100%;
-  height: 150px;
-  background-image: url(../img/coming-soon.jpg);
-  background-size: cover;
-}
-
-.card__title {
-  padding: 20px;
-}
-
-.card__proyect-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-.card__proyect-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.card__proyect-links i {
-  font-size: 1.5em;
-}
-
-.button-content {
-  display: flex;
-  justify-content: center;
-  margin: 1em;
-}
-
-.project-details-button a {
-  text-decoration: none;
-  color: rgb(38, 4, 35);
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  margin-top: 2em;
-}
-.form-group textarea {
-  height: 150px;
-  padding: 1.5em;
-  background: none;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-}
-
-.form-group .input {
-  padding: 10px 20px;
-  margin-bottom: 1em;
-  background: none;
-  border: none;
-  border-bottom: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-}
-
-.form-group .btn-submit {
-  padding: 10px 20px;
-  margin: 1em;
-  border-radius: 20px;
-  border: none;
-  text-transform: uppercase;
-  background-color: rgba(241, 64, 212, 0.774);
-  cursor: pointer;
-  box-shadow:1px 3px 11px -5px rgba(110, 23, 84, 0.69);
-}
-
-.btn-submit:hover{
-  background-color: white;
-  box-shadow: none;
-}
-.sotial-networks {
-  display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-  margin-top: 1em;
-}
-
-.sotial-networks i {
-  font-size: 1.5em;
+  max-width: 900px;
+  background-color: #02011E;
+  color: white;
 }
 
 .portfolio-heading {
@@ -261,41 +118,35 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5em;
+  font-size: 2.5em;
+  color: rgb(216, 39, 187);
+  padding: 1em 2em 0em;
+
 }
 
-.portfolio-heading h2,
-.contact-heading h2 {
-  font-size: 2.5em;
+.portfolio-heading h2 {
+  font-size: 1em;
   color: #fff;
 }
 
-.portfolio .container {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.project-details-button a{
+  text-decoration: none;
+  color: rgb(38,4,35);
 }
 
-.contact-section {
-  padding: 3em;
-  background-color:rgb(238, 226, 204);
-  color: black;
+.card_proyect-links {
+  padding-left: 1em;
 }
 
-.container-contact {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
+.card_proyect-links a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.contact-section .container-contact img {
-  width: 300px;
-  
-  bottom: 0px;
+.card_proyect-links i {
+  font-size: 1.5em;
 }
+/*FOOTER*/
 
 .footer {
   display: flex;
@@ -303,18 +154,20 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 180px;
+  height: 150px;
   padding: 2em;
-  background-color: rgba(241, 64, 212, 0.774);
+  background-color: #020120;
 }
 
-.footer-content h2 {
-  font-size: 2.5em;
+.footer-content h3 {
+  font-size: 2.0em;
+  color: white;
 }
 
 .footer-content h5 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
+  color: white;
 }
 
 .sotial-networks {
