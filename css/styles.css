@@ -40,10 +40,11 @@ h1 {
 }
 
 .buttoms {
-  padding: 10px 20px;
+  padding: 5px 15px;
   background-color: rgba(241, 64, 212, 0.774);
   border: none;
   border-radius: 20px;
+  margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(215, 41, 163, 0.69);
@@ -129,22 +130,29 @@ h1 {
   color: #fff;
 }
 
-.project-details-button a{
-  text-decoration: none;
-  color: rgb(38,4,35);
-}
-
 .card_proyect-links {
   padding-left: 1em;
 }
 
 .card_proyect-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 .card_proyect-links i {
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+
+.buttoms-portfolio {
+  padding-top: 1px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.play {
+  padding-top: 1px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 /*FOOTER*/
 
