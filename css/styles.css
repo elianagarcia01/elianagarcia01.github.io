@@ -1,6 +1,6 @@
 body {
   background-color: #010113;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*NAVBAR*/
@@ -21,7 +21,7 @@ body {
 
 /*MAIN*/
 .main {
-  margin: 45px auto;
+  margin: 45px;
   max-width: 100%;
   height: 90vh;
   display: grid;
@@ -29,6 +29,11 @@ body {
   align-items: center;
   gap: 2em;
   color: white;
+}
+
+.main p {
+  font-size: 1.2em;
+  text-align: justify;
 }
 
 h1 {
@@ -49,6 +54,7 @@ h1 {
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(215, 41, 163, 0.69);
   text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .buttoms:hover {
@@ -56,10 +62,17 @@ h1 {
   box-shadow: none;
 }
 
-.main img {
+.main .photo {
   border: 7px solid rgb(216, 39, 187);
   border-radius: 150px 160px;
   width: 350px;
+  z-index: 1;
+  justify-self: center;
+}
+
+.main .lang {
+  border-radius: 0px;
+  width: 150px;
   z-index: 1;
   justify-self: center;
 }
@@ -72,26 +85,32 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 45px auto
   }
 
   .info-content {
     text-align: center;
-    margin: 2em 2em
+    margin: 2em 2em;
   }
 
-  .main img {
-    width: 70%;
+  .main .photo {
+    width: 80%;
     height: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 0em;
     border-radius: 150px 160px;
     border-width: 5px;
   }
 
+  .pimg{
+    padding: 1em 0em 1em 0em;
+    display: flex;
+    justify-content: center;
+    
+  }
+
   .buttoms {
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
+    width: 50%;
   }
 }
 
@@ -112,6 +131,15 @@ h1 {
 .about-info h2 {
   font-size: 2em;
   color: #fff;
+}
+
+.about-info p{
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.about a {
+  color: #fff
 }
 
 .divider {
@@ -165,6 +193,10 @@ h1 {
   color: #fff;
 }
 
+.card-text{
+  font-size: 1.1em;
+}
+
 .card_proyect-links {
   padding-left: 1em;
 }
@@ -184,12 +216,21 @@ h1 {
   cursor: pointer;
 }
 
-.play {
+.link {
   padding-top: 1px;
   margin-right: 10px;
   cursor: pointer;
   font-size: 0.9em;
 }
+
+@media screen and (max-width: 768px) {
+  .portfolio-heading {
+    padding: 2em 0em 0em 2em;
+  }
+
+}
+
+
 /*FOOTER*/
 
 .footer {
