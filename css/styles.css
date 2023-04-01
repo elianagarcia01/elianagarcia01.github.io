@@ -13,12 +13,6 @@ body {
   color: rgb(216, 39, 187);
 }
 
-/*
-.menu{
-    display: flex;
-    justify-content: space-around;
-  } */
-
 /*MAIN*/
 .main {
   margin: 45px;
@@ -38,28 +32,38 @@ body {
 
 h1 {
   font-size: 3em;
+  text-shadow: 2px 2px  rgb(216, 39, 187);
+
 }
 
 .info-content span {
   color: rgb(216, 39, 187);
+  text-shadow: 1px 2px 1px #e7b0dd;
 }
 
 .buttoms {
   padding: 5px 15px;
-  background-color: rgba(241, 64, 212, 0.774);
-  border: none;
+  background-color: #861369;
+  color: #f5d2f2;
+  border:  2px solid #da58b9;
   border-radius: 20px;
-  margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
-  box-shadow: 1px 3px 11px -5px rgba(215, 41, 163, 0.69);
+  text-shadow: 1px 1px #000000;
+  box-shadow: 1px 3px 11px -5px rgba(224, 123, 216, 0.69);
   text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .buttoms:hover {
   background-color: white;
+  color: #f5afef;
   box-shadow: none;
+  background-color: #5e0748;
+  border:  2px solid #bb399a;
+
+
 }
 
 .main .photo {
@@ -70,11 +74,14 @@ h1 {
   justify-self: center;
 }
 
+.main .lang_container{
+  margin: 15px 0px 15px 0px;
+}
+
 .main .lang {
-  border-radius: 0px;
-  width: 150px;
+  width: 35px;
   z-index: 1;
-  justify-self: center;
+  padding-right: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,11 +109,15 @@ h1 {
     border-width: 5px;
   }
 
-  .pimg{
+  .main .lang_container{
     padding: 1em 0em 1em 0em;
     display: flex;
     justify-content: center;
-    
+  }
+
+  .main .lang {
+    padding-right: 0.5em;
+    width: 2.5em;
   }
 
   .buttoms {
@@ -120,22 +131,40 @@ h1 {
   flex-direction: column;
   background-color: #020120;
   color: white;
-  padding: 1em;
-  max-width: 100%;
+  padding: 1em 1em 4em 1em;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.about-heading h2 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.about-heading {
+  background-color: #020120;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0em 0em 4em;
+
 }
 
 .about-info {
-  padding: 1em;
+  padding: 0em 1em;
+  margin: 0em 3em;
 }
 
-.about-info h2 {
-  font-size: 2em;
-  color: #fff;
+.border-section{
+  border-top: 3px  #34348823 solid;
 }
 
 .about-info p{
   font-size: 1.2em;
   text-align: justify;
+}
+.about-info h4{
+  color: #f1a5ea;
 }
 
 .about a {
@@ -154,23 +183,31 @@ h1 {
   margin-bottom: 1em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .about {
     flex-direction: row;
     height: auto;
     align-items: center;
-    padding: 3em;
+    padding: 0em 1em;
   }
 
   .about-info {
     flex: 1;
+    margin: 0em;
+    padding-top: 0em;
+
+  }
+
+  .about-heading {
+    padding: 2em 0em 0em 2em;
   }
 }
 
 /*PORTFOLIO*/
 
 .contenedor {
-  padding-bottom: 120px;
+  padding-bottom: 7em;
+  padding-top: 1em;
 }
 
 .card {
@@ -183,7 +220,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(216, 39, 187);
   padding: 2em 0em 0em 4em;
 
 }
@@ -210,6 +246,10 @@ h1 {
   font-size: 1.3em;
 }
 
+.card_separation{
+  margin-bottom: 20px;
+}
+
 .buttoms-portfolio {
   padding-top: 1px;
   margin-right: 0px;
@@ -226,6 +266,14 @@ h1 {
 @media screen and (max-width: 768px) {
   .portfolio-heading {
     padding: 2em 0em 0em 2em;
+  }
+
+  .contenedor{
+    padding: 0em 2em 7em 2em;
+  }
+
+  .card_separation{
+    margin-bottom: 28px;
   }
 
 }
@@ -264,4 +312,5 @@ h1 {
 
 .sotial-networks i {
   font-size: 1.5em;
+  color: white
 }
